@@ -21,7 +21,7 @@ const decrementar = () => {
 
             <!-- Crear la funcion para que reste cantidad, pero que cuando llegue a cero, no baje a -1 -->
             <button @click="decrementar">➖</button>
-            <span>Contador: {{ contador }}</span>
+            <span> {{ contador }}</span>
             <button @click="incrementar">➕</button>
         </div>
     </div>
@@ -33,10 +33,14 @@ const decrementar = () => {
     display: flex;
     justify-content: space-around;
 }
+span{
+    color: black;
+}
 
 button {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+    background-color: dimgray;
 }
 </style>
